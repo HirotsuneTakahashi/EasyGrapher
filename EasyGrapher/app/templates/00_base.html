@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ get_locale() }}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}{{ _('EasyGrapher') }}{% endblock %}</title>
+        <!--<link rel="stylesheet" href="00_base.css">-->
+    </head>
+    <body>
+        {% block content %}
+            <header>
+                <div>
+                    <h1>{{ _('EasyGrapher') }}</h1>
+                </div>
+            </header>
+        {% endblock %}
+    </body>
+</html>
+<!--
+    cd ~/Desktop/プログラム/web練習/ExcelGrapher
+    python3 setting.py compilemessages
+    pybabel compile -d app/translations:翻訳のコンパイル
+    pybabel extract -F babel.cfg -o messages.pot .:翻訳の抽出
+    pybabel update -i messages.pot -d app/translations:poの更新
+    手順：翻訳の抽出、poの更新、編集、コンパイル
+-->
