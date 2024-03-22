@@ -1,9 +1,10 @@
+import secrets
 # -*- coding: utf-8 -*-
 #
 # available languages
 
 class Config:
-    SECRET_KEY = "^=ijahgw#acb_rqkmqf4&29b%#yfj$%hj65z4yk85crgf#-697"
+    SECRET_KEY = secrets.token_hex(16) 
     LANGUAGES = {
     'en': 'English',
     'ja': '日本語'
