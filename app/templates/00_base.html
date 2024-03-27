@@ -3,16 +3,23 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{% block title %}{{ _('EasyGrapher') }}{% endblock %}</title>
-        <link rel="stylesheet" href="00_base.css">
+        {% block head %}
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="../static/00_base.css">
+        {% endblock %}
     </head>
     <body>
+        <header>
+            <div class="title">
+                <h1>{{ _('EasyGrapher') }}</h1>
+            </div>
+            <div class="hamburger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
         {% block content %}
-            <header>
-                <div>
-                    <h1>{{ _('EasyGrapher') }}</h1>
-                </div>
-            </header>
         {% endblock %}
     </body>
 </html>

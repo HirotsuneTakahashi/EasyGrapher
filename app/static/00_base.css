@@ -1,4 +1,29 @@
-header{
+* {
+    box-sizing: border-box;
     margin: 0;
-    background-color: #0f22ec;
-}
+    padding: 0;
+  }
+    header .title{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        padding: 0;
+        margin: 0;
+        line-height: 70px;
+        padding-left: 100px;
+        background-color: rgba(181, 186, 241, 0.7);
+    }
+
+    header .hamburger-menu {
+        cursor: pointer;
+        float: right;
+        padding: 15px 10px 0 0;
+    }
+
+    header .hamburger-menu div {
+        width: 35px; 
+        height: 5px; 
+        background-color: #333; 
+        margin: 6px 0; 
+    }
