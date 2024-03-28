@@ -10,13 +10,18 @@
     </head>
     <body>
         <header>
-            <div class="title">
+            <div id="title">
                 <h1>{{ _('EasyGrapher') }}</h1>
             </div>
-            <div class="hamburger-menu">
+            <!--<div class="hamburger-menu">
                 <div></div>
                 <div></div>
                 <div></div>
+            </div>-->
+            <div id="selecter">
+                <a href="/howToUse" class="selecter-item">{{ _('How to use') }}</a>
+                <a href="/termsOfUse" class="selecter-item">{{ _('Terms of Use') }}</a>
+                <a href="/aboutThisSite" class="selecter-item">{{ _('About this site') }}</a>
             </div>
         </header>
         {% block content %}
