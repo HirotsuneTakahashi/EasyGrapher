@@ -9,6 +9,7 @@
         {% endblock %}
     </head>
     <body>
+        <div id="nextPageData" data-next-page="{{ next }}"></div>
         <header>
             <div id="title">
                 <h1>{{ _('EasyGrapher') }}</h1>
@@ -19,13 +20,16 @@
                 <div></div>
             </div>-->
             <div id="selecter">
-                <a href="/howToUse" class="selecter-item">{{ _('How to use') }}</a>
-                <a href="/termsOfUse" class="selecter-item">{{ _('Terms of Use') }}</a>
-                <a href="/aboutThisSite" class="selecter-item">{{ _('About this site') }}</a>
+                <span id="textHome" style="display: none;">{{ _('Home') }}</span>
+                <a href="/howToUse?next=howToUse-home" id="selecter1" class="selecter-item">{{ _('How to use') }}</a>
+                <a href="/termsOfUse?next=termsOfUse-home" id="selecter2" class="selecter-item">{{ _('Terms of Use') }}</a>
+                <a href="/aboutThisSite?next=aboutThisSite-home" id="selecter3" class="selecter-item">{{ _('About this site') }}</a>
             </div>
         </header>
         {% block content %}
         {% endblock %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
 </html>
 <!--

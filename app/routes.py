@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, request
 from flask import current_app as app
 
 def init_app(app):
@@ -20,12 +20,18 @@ def init_app(app):
     
     @app.route('/howToUse')
     def howToUse():
-        return render_template('81_howToUse.html')
+        next_page = request.args.get('next', None)
+        #↑ボタンをHomeに変更するためのコマンド
+        return render_template('81_howToUse.html', next=next_page)
     
     @app.route('/termsOfUse')
     def termsOfUse():
-        return render_template('82_termsOfUse.html')
+        next_page = request.args.get('next', None)
+        #↑ボタンをHomeに変更するためのコマンド
+        return render_template('82_termsOfUse.html', next=next_page)
     
     @app.route('/aboutThisSite')
     def aboutThisSite():
-        return render_template('83_aboutThisSite.html')
+        next_page = request.args.get('next', None)
+        #↑ボタンをHomeに変更するためのコマンド
+        return render_template('83_aboutThisSite.html', next=next_page)
