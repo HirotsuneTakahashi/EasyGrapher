@@ -1,0 +1,16 @@
+#drop {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 120px auto;
+    background-color: rgb(240, 234, 223);
+    height: calc(100vh - 400px);
+    width: 60%;
+    border-radius: 70px;
+    text-align: center;
+}
+
+#drop input, #drop label {
+    font-size: 35px;
+    background-color: aqua;
+}

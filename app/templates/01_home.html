@@ -9,5 +9,10 @@
 
 {% block content %}
     {{ super() }}
-    
+    <form action="/upload?next=upload1" method="POST" enctype="multipart/form-data"></form>
+        <div id="drop">
+            <input type="file" id="fileElem" accept=".doc,.docx,.xls,.xlsx" style="display:none">
+            <label for="fileElem" class="button">{{ _("Select file") }}</label>
+        </div>
+    </form>
 {% endblock %}

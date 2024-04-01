@@ -11,11 +11,13 @@
         width: 100%;
         padding: 0;
         margin: 0;
-        background-color: rgba(181, 186, 241, 0.7);
+        /*background-color: rgba(191, 199, 206, 0.7);*/
+        background-color: rgba(255, 255, 255,0.7);
     }
 
     header{
         top: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     #title{
@@ -74,6 +76,7 @@
     main{
         padding-top: 80px;
         padding-bottom: 80px;
-        background-color: rgba(214, 217, 243, 0.7);
+        background-color: rgb(245,245,245);
         min-height: calc(100vh - 80px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }

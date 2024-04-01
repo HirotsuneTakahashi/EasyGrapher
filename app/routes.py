@@ -1,4 +1,4 @@
-from flask import render_template, request
+from flask import Flask, render_template, request
 from flask import current_app as app
 
 def init_app(app):
@@ -41,3 +41,7 @@ def init_app(app):
         next_page = request.args.get('next', None)
         #↑ボタンをHomeに変更するためのコマンド
         return render_template('84_faq.html', next=next_page)
+    
+    @app.route('/upload', methods=['POST'])
+    def upload_file():
+        uploaded_files = request.files.getlist('fileElem')
