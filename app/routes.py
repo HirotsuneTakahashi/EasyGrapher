@@ -35,3 +35,9 @@ def init_app(app):
         next_page = request.args.get('next', None)
         #↑ボタンをHomeに変更するためのコマンド
         return render_template('83_aboutThisSite.html', next=next_page)
+    
+    @app.route('/faq')
+    def faq():
+        next_page = request.args.get('next', None)
+        #↑ボタンをHomeに変更するためのコマンド
+        return render_template('84_faq.html', next=next_page)

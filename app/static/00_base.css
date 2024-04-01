@@ -4,7 +4,7 @@
     padding: 0;
   }
 
-    header{
+    header, footer{
         display: flex;
         position: fixed;
         height: 80px;
@@ -12,13 +12,23 @@
         padding: 0;
         margin: 0;
         background-color: rgba(181, 186, 241, 0.7);
+    }
 
+    header{
+        top: 0;
     }
 
     #title{
         line-height: 75px;
         padding-left: 100px;
         font-size: 25px
+    }
+
+    #homeButton{
+        line-height: 10px;
+        margin-left: 10px;
+        width: 80px;
+        height: 80px;
     }
 
     /*header .hamburger-menu {
@@ -34,13 +44,36 @@
         margin: 6px 0; 
     }*/
 
-    #selecter{
+    #selecter_head{
         cursor: pointer;
         margin-left: auto;
         padding-top: 25px;
     }
 
-    header div .selecter-item{
+    .selecter-item{
         padding-right: 60px;
         font-size: 25px;
+    }
+
+    footer{
+        bottom: 0;
+    }
+
+    footer #copyRight{
+        padding: 30px 0 0 100px;
+        font-size: 20px;
+    }
+
+    #selecter_foot{
+        cursor: pointer;
+        margin-left: auto;
+        padding: 30px 50px 0 0;
+
+    }
+
+    main{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: rgba(214, 217, 243, 0.7);
+        min-height: calc(100vh - 80px);
     }
