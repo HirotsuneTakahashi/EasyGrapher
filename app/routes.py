@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from flask import current_app as app
+from .graph import graph
 
 def init_app(app):
     @app.route('/')
@@ -42,7 +43,9 @@ def init_app(app):
         #↑ボタンをHomeに変更するためのコマンド
         return render_template('84_faq.html', next=next_page)
     
-    @app.route('/upload', methods=['POST'])
+    @app.route('/upload', methods=['GET', 'POST'])
     def upload_file():
-        uploaded_files = request.files.getlist('fileElem')
-        print("a")
+        if request.method == 'POST':
+            file = request.files['file']
+            graph(file)
+        return render_template('03_select.html')

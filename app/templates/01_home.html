@@ -5,16 +5,16 @@
     <link rel="stylesheet" href="../static/01_home.css">
 {% endblock %}
 
-{% block title %}{{ _('HomePage') }} | {{ _('EasyGrapher') }}{% endblock %}
+{% block title %}{{ _('Home page') }} | {{ _('EasyGrapher') }}{% endblock %}
 
 {% block content %}
     {{ super() }}
-    <form action="/upload" method="POST" enctype="multipart/form-data"></form>
-        <div id="drop">
-            <input type="file"  class="button" id="fileElem" accept=".doc,.docx,.xls,.xlsx" name="fileElem" style="display:none" placeholder="{{ _('Your file') }}">
-            <label for="fileElem" class="button">{{ _("Select file") }}</label>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div id="file-submit">
+            <input type="file"  class="button" id="file" accept=".doc,.docx,.xls,.xlsx" name="file" style="display:none" placeholder="{{ _('Your file') }}">
+            <label for="file" class="button">{{ _("Select file") }}</label>
             <span id="fileName">{{ _("File is not selected") }}</span>
-            <input type="submit" value="{{ _('submit') }}">
         </div>
+        <button type="submit" id="submit-button">{{ _('Confirm') }}</button>
     </form>
 {% endblock %}

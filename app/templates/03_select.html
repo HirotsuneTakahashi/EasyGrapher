@@ -1,0 +1,13 @@
+{% extends '00_base.html' %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="../static/03_select.css">
+{% endblock %}
+
+{% block title %}{{ _('Select') }} | {{ _('EasyGrapher') }}{% endblock %}
+
+{% block content %}
+    {{ super() }}
+    <img src="../static/images/graph.png">
+{% endblock %}

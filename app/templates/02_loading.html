@@ -1,0 +1,12 @@
+{% extends '00_base.html' %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="../static/02_loading.css">
+{% endblock %}
+
+{% block title %}{{ _('Loading page') }} | {{ _('EasyGrapher') }}{% endblock %}
+
+{% block content %}
+    {{ super() }}
+{% endblock %}
