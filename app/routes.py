@@ -45,3 +45,4 @@ def init_app(app):
     @app.route('/upload', methods=['POST'])
     def upload_file():
         uploaded_files = request.files.getlist('fileElem')
+        print("a")

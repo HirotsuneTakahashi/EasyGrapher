@@ -31,6 +31,21 @@ $(document).ready(function(){
         })
     }
     else if(nextPage === "upload1"){
-        
+        alert("a");
     }
+
+    $('#fileElem').change(function() {
+        var fileName = $(this).val().split('\\').pop(); // ファイルパスからファイル名を取得
+        $('#fileName').text(fileName); // ファイル名を表示要素に設定
+    });
+
+    $("#drop").draggable();
+    $( "#drop" ).droppable({
+        drop: function( event, ui ) {
+            $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                . html( "ドロップされました！" );
+        }
+    });
 });
