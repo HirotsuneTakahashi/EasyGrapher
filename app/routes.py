@@ -54,9 +54,6 @@ def init_app(app):
     def upload_file():
         if request.method == 'POST':
             file = request.files['file']
-            app.config['UPLOAD_FOLDER'] = '.'  # アップロードされたファイルを保存するディレクトリ
-            app.config['PROCESSED_DATA_FOLDER'] = 'app/static/files'  # 処理後のデータを保存するディレクトリ
-            app.secret_key = 'f9b61bc784fb6b74ac772a2fcefd76cd24e2fa5f8332f820'
 
             filename = file.filename
             _, ext = os.path.splitext(filename)
@@ -67,7 +64,6 @@ def init_app(app):
                 processed_file_path = os.path.join(app.config['PROCESSED_DATA_FOLDER'], processed_filename)
                 df.to_csv(processed_file_path, index=False)
                 session['processed_file_path'] = processed_file_path
-                df.to_csv(processed_file_path)
                 graph(df)
 
         return render_template('03_select.html')

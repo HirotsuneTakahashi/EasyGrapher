@@ -1,4 +1,6 @@
 import secrets
+from flask import session
+from flask import current_app as app
 # -*- coding: utf-8 -*-
 #
 # available languages
