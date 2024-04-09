@@ -56,27 +56,4 @@ $(document).ready(function(){
                 . html( "ドロップされました！" );
         }
     });
-
-    $('button[name="action"]').click(function() {
-        var graphType = $(this).val(); // クリックされたボタンのvalueを取得
-
-        // クリックされたグラフタイプに応じたデータを準備
-        var data = {
-            'graph_type': graphType,
-        };
-
-        // Ajaxリクエストを送信
-        $.ajax({
-            url: '/selectImage',
-            type: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify(data),
-            success: function(response) {
-                $('#graph-preview').attr('src', 'data:image/png;base64,' + response.image);
-            },
-            error: function(error) {
-                console.log(error);
-            }
-        });
-    });
 });

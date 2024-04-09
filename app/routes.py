@@ -1,8 +1,7 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request
 from flask import current_app as app
 from .graph import graph
 from .graph_cutomize import generate_base64_graph
-from flask import session
 import os
 import pandas as pd
 import matplotlib
@@ -68,20 +67,15 @@ def init_app(app):
                 processed_file_path = os.path.join(app.config['PROCESSED_DATA_FOLDER'], processed_filename)
                 df.to_csv(processed_file_path, index=False)
                 session['processed_file_path'] = processed_file_path
+                df.to_csv(processed_file_path)
                 graph(df)
 
         return render_template('03_select.html')
     
     @app.route('/selectImage', methods=['POST'])
     def selectImage():
-        # リクエストからデータを取得
-        data = request.json
-        graph_type = data['graph_type']
-        processed_file_path = session.get('processed_file_path')
-        if processed_file_path:
-            # graph 関数を呼び出し、ファイルパスを渡す
-            base64_graph = generate_base64_graph(graph_type, processed_file_path)
-            return jsonify({'success': True, 'image': base64_graph})
-        else:
-            #  エラーハンドリング
-            return jsonify({'error': 'Processed file not found'}), 404
+        if request.method == 'POST':
+            # リクエストからデータを取得
+            action = request.form['action']
+            base64_graph = generate_base64_graph(action)
+            return render_template('04_answer.html', img_data=base64_graph)

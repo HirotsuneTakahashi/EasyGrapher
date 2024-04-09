@@ -8,36 +8,35 @@
 {% block title %}{{ _('Select') }} | {{ _('EasyGrapher') }}{% endblock %}
 
 {% block content %}
-    {{ super() }}
-    <form action="/selectImage" method="POST">
+    {{ super() }} <form action="/selectImage" method="POST">
         <div id="container">
             <div class="image-group">
                 <img src="../static/images/graph_bar.png" class="bar">
-                <button type="button" name="action" value="bar" id="submit-button-bar" class="bar">{{ _('Confirm') }}</button>
+                <button type="submit" name="action" value="bar" id="submit-button-bar" class="bar">{{ _('Confirm') }}</button>
             </div>
             <div class="image-group">
                 <img src="../static/images/graph_line.png" class="line">
-                <button type="button" name="action" value="line" id="submit-button-line" class="line">{{ _('Confirm') }}</button>
+                <button type="submit" name="action" value="line" id="submit-button-line" class="line">{{ _('Confirm') }}</button>
             </div>
             <div class="image-group">
                 <img src="../static/images/graph_hist.png" class="hist">
-                <button type="button" name="action" value="hist" id="submit-button-hist" class="hist">{{ _('Confirm') }}</button>
+                <button type="submit" name="action" value="hist" id="submit-button-hist" class="hist">{{ _('Confirm') }}</button>
             </div>
             <div class="image-group">
                 <img src="../static/images/graph_box.png" class="box">
-                <button type="button" name="action" value="box" id="submit-button-box" class="box">{{ _('Confirm') }}</button>
+                <button type="submit" name="action" value="box" id="submit-button-box" class="box">{{ _('Confirm') }}</button>
             </div>
             <div class="image-group">
                 <img src="../static/images/graph_area.png" class="area">
-                <button type="button" name="action" value="area" id="submit-button-area" class="area">{{ _('Confirm') }}</button>
+                <button type="submit" name="action" value="area" id="submit-button-area" class="area">{{ _('Confirm') }}</button>
             </div>
             <div class="image-group">
                 <img src="../static/images/graph_pie.png" class="pie">
-                <button type="button" name="action" value="pie" id="submit-button-pie" class="pie">{{ _('Confirm') }}</button>
+                <button type="submit" name="action" value="pie" id="submit-button-pie" class="pie">{{ _('Confirm') }}</button>
             </div>
             <div class="image-group">
                 <img src="../static/images/graph_scatter.png" class="scatter">
-                <button type="button" name="action" value="scatter" id="submit-button-scatter" class="scatter">{{ _('Confirm') }}</button>
+                <button type="submit" name="action" value="scatter" id="submit-button-scatter" class="scatter">{{ _('Confirm') }}</button>
             </div>
         </div>
     </form>

@@ -9,5 +9,5 @@
 
 {% block content %}
     {{ super() }}
-    <img id="graph-preview" src="" alt="Graph preview" />
+    <img src="data:image/png;base64,{{ img_data }}" alt="Generated Graph">
 {% endblock %}
