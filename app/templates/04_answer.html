@@ -1,0 +1,13 @@
+{% extends '00_base.html' %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="../static/04_answer.css">
+{% endblock %}
+
+{% block title %}{{ _('Customize page') }} | {{ _('EasyGrapher') }}{% endblock %}
+
+{% block content %}
+    {{ super() }}
+    <img id="graph-preview" src="" alt="Graph preview" />
+{% endblock %}
