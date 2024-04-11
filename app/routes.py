@@ -74,4 +74,4 @@ def init_app(app):
             # リクエストからデータを取得
             action = request.form['action']
             base64_graph = generate_base64_graph(action)
-            return render_template('04_answer.html', img_data=base64_graph)
+            return render_template('04_answer.html', img_data=base64_graph, graph_type=action)
