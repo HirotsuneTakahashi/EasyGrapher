@@ -11,7 +11,7 @@
     {{ super() }}
     <script>var graphType = "{{ graph_type }}";</script>
     <script src="../static/script.js"></script>
-    <img src="data:image/png;base64,{{ img_data }}" alt="Generated Graph">
+    <img id="cus_graph" src="data:image/png;base64,{{ img_data }}" alt="Generated Graph">
     <select id="graph_type">
         <option value="bar">{{ _("bar graph") }}</option>
         <option value="line">{{ _("line graph") }}</option>

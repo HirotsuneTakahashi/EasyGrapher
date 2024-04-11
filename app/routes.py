@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from flask import current_app as app
 from .graph import graph
-from .graph_cutomize import generate_base64_graph
+from .graph_cutomize import generate_base64_graph, customize_base64_graph
 import os
 import pandas as pd
 import matplotlib
@@ -81,7 +81,7 @@ def init_app(app):
         # リクエストからパラメータを取得
         data = request.json
         graphType = data['graph_type']
-        graph_title = ['graph_title']
+        graph_title = data['graph_title']
         x_column = data['x_column']
         y_column = data['y_column']
         
