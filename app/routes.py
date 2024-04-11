@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from flask import current_app as app
 from .graph import graph
 from .graph_cutomize import generate_base64_graph
@@ -75,3 +75,17 @@ def init_app(app):
             action = request.form['action']
             base64_graph = generate_base64_graph(action)
             return render_template('04_answer.html', img_data=base64_graph, graph_type=action)
+        
+    @app.route('/customizeGraph', methods=['POST'])
+    def customizeGraph():
+        # リクエストからパラメータを取得
+        data = request.json
+        graphType = data['graph_type']
+        graph_title = ['graph_title']
+        x_column = data['x_column']
+        y_column = data['y_column']
+        
+        base64_string = customize_base64_graph(graphType, graph_title, x_column, y_column)
+        
+        # Base64エンコーディングされた画像データを返す
+        return jsonify({'img_data': base64_string})
