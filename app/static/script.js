@@ -1,3 +1,25 @@
+function updateGraph() {
+    var graph_type = document.getElementById('graph_type').value;
+    var title = document.getElementById('graph_title').value;
+    var xAxis = document.getElementById('x_axis').value;
+    var yAxis = document.getElementById('y_axis').value;
+    
+    // Ajaxリクエストを送信
+    fetch('/customizeGraph', {
+        method: 'POST', // またはGET、APIの設計に依存
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({x_column: xAxis, y_column: yAxis, graph_type: graph_type, graph_title: title}), // 送信するデータ
+    })
+    .then(response => response.json())
+    .then(data => {
+        // グラフの画像を更新
+        document.getElementById('cus_graph').src = 'data:image/png;base64,' + data.img_data;
+    })
+    .catch(error => console.error('Error:', error));
+}
+
 $(document).ready(function(){
 
     var nextPage = $("#nextPageData").data("next-page");
@@ -77,27 +99,5 @@ $(document).ready(function(){
     }
     else if(graphType === "scatter"){
         $("#graph_type").val("scatter");
-    }
-
-    function updateGraph() {
-        var graph_type = document.getElementById('graph_type').value;
-        var title = document.getElementById('graph_title').value;
-        var xAxis = document.getElementById('x_axis').value;
-        var yAxis = document.getElementById('y_axis').value;
-        
-        // Ajaxリクエストを送信
-        fetch('/cutomizeGraph', {
-            method: 'POST', // またはGET、APIの設計に依存
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({x_column: xAxis, y_column: yAxis, graph_type: graph_type, graph_title: title}), // 送信するデータ
-        })
-        .then(response => response.json())
-        .then(data => {
-            // グラフの画像を更新
-            document.getElementById('cus_graph').src = 'data:image/png;base64,' + data.img_data;
-        })
-        .catch(error => console.error('Error:', error));
     }
 });
