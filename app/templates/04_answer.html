@@ -12,7 +12,7 @@
     <script>var graphType = "{{ graph_type }}";</script>
     <script src="../static/script.js"></script>
     <img id="cus_graph" src="data:image/png;base64,{{ img_data }}" alt="Generated Graph">
-    <select id="graph_type">
+    <select id="graph_type" hidden>
         <option value="bar">{{ _("bar graph") }}</option>
         <option value="line">{{ _("line graph") }}</option>
         <option value="hist">{{ _("hist graph") }}</option>
@@ -21,9 +21,14 @@
         <option value="pie">{{ _("pie graph") }}</option>
         <option value="scatter">{{ _("scatter graph") }}</option>
     </select>
-    <input type="text" id="graph_title" placeholder="{{ _('Input name of title') }}">
-    <input type="text" id="x_axis" placeholder="{{ _('Input name of X-label') }}">
-    <input type="text" id="y_axis" placeholder="{{ _('Input name of Y-label') }}">
-    <button onclick="updateGraph()">{{ _("customize graph") }}</button>
+    <div id="custom">
+        <div id="inputSome">
+            <input type="text" id="graph_title" placeholder="{{ _('Input name of title') }}">
+            <input type="text" id="x_axis" placeholder="{{ _('Input name of X-label') }}">
+            <input type="text" id="y_axis" placeholder="{{ _('Input name of Y-label') }}">
+        </div>
+        <button onclick="updateGraph()" id="customButton">{{ _("customize graph") }}</button>
+        <button id="downloadButton">{{ _("Download") }}</button>
+    </div>
     
 {% endblock %}

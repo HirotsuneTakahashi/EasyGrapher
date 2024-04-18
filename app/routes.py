@@ -8,6 +8,7 @@ import matplotlib
 matplotlib.use('Agg')
 from datetime import datetime
 from flask import session
+import uuid
 
 def init_app(app):
     @app.route('/')
@@ -58,12 +59,19 @@ def init_app(app):
             filename = file.filename
             _, ext = os.path.splitext(filename)
 
+            random_filename = f"{uuid.uuid4().hex}{ext}"
+
             if ext in ['.xls', '.xlsx']:
+
+                file_path = os.path.join(app.config['UPLOAD_FOLDER'], random_filename)
+                file.save(file_path)
+
                 df = pd.read_excel(file)  # アップロードされたファイルを読み込む
                 processed_filename = f"{datetime.now().strftime('%Y%m%d%H%M%S')}_{filename}.csv"
                 processed_file_path = os.path.join(app.config['PROCESSED_DATA_FOLDER'], processed_filename)
                 df.to_csv(processed_file_path, index=False)
                 session['processed_file_path'] = processed_file_path
+                os.remove(file_path)
                 graph(df)
 
         return render_template('03_select.html')

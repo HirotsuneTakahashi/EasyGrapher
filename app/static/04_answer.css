@@ -1,0 +1,66 @@
+main {
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    justify-content: center; /* 水平方向の中央揃え */
+    height: 100vh; /* 親要素の高さをビューポートの100%に設定 */
+    padding-bottom: 80px;
+    padding-top: 80px
+}
+
+img {
+    max-height: calc(100vh - 300px);
+    width: auto;
+    margin: 0 40px;
+}
+
+#custom, #inputSome{
+    display: flex;
+    flex-direction: column; /* 子要素を縦に並べる */
+    justify-content: center; /* 垂直方向の中央揃え */
+}
+
+input[type="text"] {
+    margin-bottom: 10px; /* 入力フィールドの間の余白 */
+    font-size: 20px;
+}
+
+#inputSome{
+    padding-bottom: 50px;
+}
+
+#customButton{
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(233, 105, 44);
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#downloadButton{
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(189, 34, 34);
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}

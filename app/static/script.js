@@ -100,4 +100,22 @@ $(document).ready(function(){
     else if(graphType === "scatter"){
         $("#graph_type").val("scatter");
     }
+
+    $('#downloadButton').click(function() {
+        // 画像のURLを取得
+        var imageURL = $('#cus_graph').attr('src');
+
+        // 一時的にダウンロードリンクを作成
+        var downloadLink = $('<a>')
+            .attr('href', imageURL) // hrefに画像のURLを設定
+            .attr('download', 'downloadedImage.png') // ダウンロード時のファイル名を設定
+            .css('display', 'none'); // 画面上に表示されないように非表示に設定
+
+        // bodyタグの最後にリンクを追加してクリックイベントを発火
+        $('body').append(downloadLink);
+        downloadLink[0].click();
+
+        // リンクをドキュメントから削除
+        downloadLink.remove();
+    });
 });
