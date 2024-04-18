@@ -45,11 +45,17 @@ def init_app(app):
         #↑ボタンをHomeに変更するためのコマンド
         return render_template('83_aboutThisSite.html', next=next_page)
     
+    @app.route('/privacyPolicy')
+    def privacyPolicy():
+        next_page = request.args.get('next', None)
+        #↑ボタンをHomeに変更するためのコマンド
+        return render_template('84_privacyPolicy.html', next=next_page)
+    
     @app.route('/faq')
     def faq():
         next_page = request.args.get('next', None)
         #↑ボタンをHomeに変更するためのコマンド
-        return render_template('84_faq.html', next=next_page)
+        return render_template('85_faq.html', next=next_page)
     
     @app.route('/upload', methods=['GET', 'POST'])
     def upload_file():

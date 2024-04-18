@@ -45,9 +45,16 @@ $(document).ready(function(){
             'textDecoration': 'none'
         })
     }
-    else if(nextPage === "faq"){
+    else if(nextPage === "privacyPolicy-home"){
         $("#selecter4").removeAttr('href');
         $("#selecter4").css({
+            'color': 'gray',
+            'textDecoration': 'none'
+        })
+    }
+    else if(nextPage === "faq"){
+        $("#selecter5").removeAttr('href');
+        $("#selecter5").css({
             'color': 'gray',
             'textDecoration': 'none'
         })
