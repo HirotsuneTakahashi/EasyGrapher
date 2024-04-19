@@ -2,7 +2,7 @@
 
 {% block head %}
     {{ super() }}
-    <link rel="stylesheet" href="../static/04_answer.css">
+    <link rel="stylesheet" href="/static/04_answer.css">
 {% endblock %}
 
 {% block title %}{{ _('Customize page') }} | {{ _('EasyGrapher') }}{% endblock %}
@@ -29,5 +29,5 @@
         <button id="downloadButton">{{ _("Download") }}</button>
     </div>
     <script>var graphType = "{{ graph_type }}";</script>
-    <script src="./script/04_answer.js"></script>
+    <script src="/static/script/04_answer.js"></script>
 {% endblock %}

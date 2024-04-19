@@ -9,6 +9,7 @@ matplotlib.use('Agg')
 from datetime import datetime
 from flask import session
 import uuid
+from werkzeug.utils import secure_filename
 
 def init_app(app):
     @app.route('/')
@@ -79,7 +80,7 @@ def init_app(app):
                 session['processed_file_path'] = processed_file_path
                 os.remove(file_path)
                 graph(df)
-
+    
         return render_template('03_select.html')
     
     @app.route('/selectImage', methods=['POST'])
