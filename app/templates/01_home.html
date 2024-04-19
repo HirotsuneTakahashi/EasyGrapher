@@ -1,7 +1,6 @@
 {% extends '00_base.html' %}
 
 {% block head %}
-    {{ super() }}
     <link rel="stylesheet" href="../static/01_home.css">
 {% endblock %}
 
@@ -17,4 +16,5 @@
         </div>
         <button type="submit" id="submit-button">{{ _('Confirm') }}</button>
     </form>
+    <script src="/static/script/01_home.js"></script>
 {% endblock %}
