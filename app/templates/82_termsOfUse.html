@@ -10,6 +10,22 @@
 {% block content %}
     {{ super() }}
     <div id="use">
-        
+        <h2>{{ _('Terms of Use') }}</h2>
+        <p>{{ _('These Terms of Use ("Terms") govern the conditions under which Hirotsune Takahashi ("Provider") offers services ("Services") on this website. All users ("Users") must use the Services in accordance with these Terms.') }}</p>
+        <h3>{{ ('Article 1 (Applicability)') }}</h3>
+        <ul>
+            <li>{{ _('These Terms apply to all relationships related to the use of the Services between Users and the Provider.') }}</li>
+            <li>{{ _('In addition to these Terms, the Provider may establish various rules and conditions ("Specific Provisions") related to the use of the Services. These Specific Provisions, regardless of their name, form part of these Terms.') }}</li>
+            <li>{{ _('If there is any conflict between the provisions of these Terms and the Specific Provisions, the Specific Provisions shall prevail unless otherwise specified.') }}</li>
+        </ul>
+        <h3>{{ ('Article 2 (Use)') }}</h3>
+        <ul>
+            <li>{{ _('By using the Services, Users agree to these Terms and the separately stated privacy policy of the Services.') }}</li>
+            <li>{{ _('The Provider may deny further use of the Services without disclosure of reasons in the following cases:') }}</li>
+            <ul>
+                <li>{{ _('If the application is from someone who has previously violated these Terms.') }}</li>
+                <li>{{ _('If the Provider judges that the use of the Services by the User is not appropriate.') }}</li>
+            </ul>
+        </ul>
     </div>
 {% endblock %}
