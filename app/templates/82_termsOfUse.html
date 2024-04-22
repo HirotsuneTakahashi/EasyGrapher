@@ -11,21 +11,105 @@
     {{ super() }}
     <div id="use">
         <h2>{{ _('Terms of Use') }}</h2>
-        <p>{{ _('These Terms of Use ("Terms") govern the conditions under which Hirotsune Takahashi ("Provider") offers services ("Services") on this website. All users ("Users") must use the Services in accordance with these Terms.') }}</p>
-        <h3>{{ ('Article 1 (Applicability)') }}</h3>
+        <p>{{ _('These Terms of Use ("Terms") govern the conditions under which Hiroshi Takahashi ("Provider") offers services ("Services") on this website. All users ("Users") must use the Services in accordance with these Terms.') }}</p>
+        <h3>{{ _('Article 1 (Applicability)') }}</h3>
         <ul>
             <li>{{ _('These Terms apply to all relationships related to the use of the Services between Users and the Provider.') }}</li>
             <li>{{ _('In addition to these Terms, the Provider may establish various rules and conditions ("Specific Provisions") related to the use of the Services. These Specific Provisions, regardless of their name, form part of these Terms.') }}</li>
             <li>{{ _('If there is any conflict between the provisions of these Terms and the Specific Provisions, the Specific Provisions shall prevail unless otherwise specified.') }}</li>
         </ul>
-        <h3>{{ ('Article 2 (Use)') }}</h3>
+        <h3>{{ _('Article 2 (Use)') }}</h3>
         <ul>
             <li>{{ _('By using the Services, Users agree to these Terms and the separately stated privacy policy of the Services.') }}</li>
-            <li>{{ _('The Provider may deny further use of the Services without disclosure of reasons in the following cases:') }}</li>
-            <ul>
-                <li>{{ _('If the application is from someone who has previously violated these Terms.') }}</li>
-                <li>{{ _('If the Provider judges that the use of the Services by the User is not appropriate.') }}</li>
-            </ul>
+            <li>{{ _('The Provider may deny further use of the Services without disclosure of reasons in the following cases:') }}
+                <ul>
+                    <li>{{ _('If the application is from someone who has previously violated these Terms.') }}</li>
+                    <li>{{ _('If the Provider judges that the use of the Services by the User is not appropriate.') }}</li>
+                </ul>
+            </li>
         </ul>
+        <h3>{{ _('Article 3 (About Provided Files)') }}</h3>
+        <ul>
+            <li>{{ _('When Users provide files, including .xls and .xlsx, for the use of the Services, they agree to the following:') }}
+                <ul>
+                    <li>{{ _('The Provider does not guarantee the safety, integrity, or reliability of the provided files. Users accept the risk associated with providing files.') }}</li>
+                    <li>{{ _('The Provider shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from the provided files, to the fullest extent permitted by law.') }}</li>
+                    <li>{{ _('Regarding requests to delete files, the Provider will consider appropriate action based on technical or legal requirements, but does not guarantee the implementation of deletion.') }}</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>{{ _('Article 4 (Prohibitions)') }}</h3>
+        <ul>
+            <li>{{ _('Users must not engage in the following actions when using the Services:') }}
+                <ul>
+                    <li>{{ _('Violations of laws or public decency.') }}</li>
+                    <li>{{ _('Acts related to criminal activities.') }}</li>
+                    <li>{{ _('Infringing on intellectual property rights such as copyrights and trademarks contained in the Services.') }}</li>
+                    <li>{{ _("Acts that destroy or interfere with the functionality of the Provider's or other Users' servers or networks.") }}</li>
+                    <li>{{ _('Commercially using information obtained from the Services without permission.') }}</li>
+                    <li>{{ _("Actions that could interfere with the operation of the Provider's Services.") }}</li>
+                    <li>{{ _('Unauthorized access or attempts thereof.') }}</li>
+                    <li>{{ _('Collecting or storing personal information about other Users.') }}</li>
+                    <li>{{ _('Using the Services for fraudulent purposes.') }}</li>
+                    <li>{{ _('Acts that disadvantage, harm, or cause discomfort to other Users or third parties.') }}</li>
+                    <li>{{ _('Impersonating another User.') }}</li>
+                    <li>{{ _('Unauthorized advertising, soliciting, or commercial activities on the Services.') }}</li>
+                    <li>{{ _('Acts aimed at meeting unknown persons of the opposite sex.') }}</li>
+                    <li>{{ _("Benefiting anti-social forces in connection with the Provider's Services.") }}</li>
+                    <li>{{ _('Any other actions deemed inappropriate by the Provider.') }}</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>{{ _('Article 5 (Suspension of Services)') }}</h3>
+        <ul>
+            <li>{{ _('The Provider may suspend or interrupt the provision of all or part of the Services without prior notice to Users if any of the following reasons occur:') }}
+                <ul>
+                    <li>{{ _('Maintenance, inspection, or updates of the computer system related to the Services.') }}</li>
+                    <li>{{ _('Force majeure events such as earthquakes, lightning, fire, power outages, or natural disasters make it difficult to provide the Services.') }}</li>
+                    <li>{{ _('Accidents causing the stoppage of computers or communication lines.') }}</li>
+                    <li>{{ _('Other circumstances where the Provider deems it difficult to provide the Services.') }}</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>{{ _('Article 6 (Restrictions and Cancellation of Registration)') }}</h3>
+        <ul>
+            <li>{{ _('The Provider may, without prior notice, restrict use of all or part of the Services or cancel the registration of a User if:') }}
+                <ul>
+                    <li>{{ _('The User violates any provision of these Terms.') }}</li>
+                    <li>{{ _('The User does not respond to communications from the Provider for a month.') }}</li>
+                    <li>{{ _('The Provider deems the Use\'s use of the Services inappropriate.') }}</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>{{ _('Article 7 (Disclaimer of Warranty and Limitation of Liability)') }}</h3>
+        <ul>
+            <li>{{ _('The Provider explicitly and implicitly does not guarantee that the Services are free of factual or legal defects (including defects related to safety, reliability, accuracy, completeness, effectiveness, fitness for a specific purpose, security, and rights infringement, such as defects, errors, or bugs).') }}</li>
+            <li>{{ _('Except in cases of intentional or gross negligence, the Provider is not liable for any damages incurred by Users arising from the Services. However, if the contract between the Provider and the User concerning the Services (including these Terms) constitutes a consumer contract under the Consumer Contract Act, this exemption clause does not apply.') }}</li>
+            <li>{{ _('Even in the cases provided in the proviso to the previous paragraph, the Provider is not liable for damages arising from special circumstances (including cases where the Provider or User could foresee or have foreseen the occurrence of damages), unless due to the Provider\'s negligence (excluding gross negligence). Compensation for damages caused by the Provider\'s negligence (excluding gross negligence) shall be limited to the amount of the usage fee received from the User in the month the damage occurred.') }}</li>
+        </ul>
+        <h3>{{ _('Article 8 (Changes to Service Content)') }}</h3>
+        <ul>
+            <li>{{ _('The Provider may change, add, or discontinue the content of the Services without prior notice to Users. However, if the Provider judges that a change in the content of the Services significantly alters the essence of the Services, prior notice will be given.') }}</li>
+        </ul>
+        <h3>{{ _('Article 9 (Amendment of Terms)') }}</h3>
+        <ul>
+            <li>{{ _('The Provider may amend these Terms without the individual consent of the Users in the following cases:') }}
+                <ul>
+                    <li>{{ _('When the amendment of the Terms is deemed by the Provider to be in the general interest of the Users.') }}</li>
+                    <li>{{ _('When the amendment does not contradict the purpose of the contract for the use of the Services, and is deemed reasonable in light of the necessity of the change, the content after the change, and other circumstances related to the amendment.') }}</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>{{ _('Article 10 (Copyright)') }}</h3>
+        <p>{{ _('The copyright of the Services is held by Hiroshi Takahashi, the Provider.') }}</p>
+        <h3>{{ _('Article 11 (Handling of Personal Information)') }}</h3>
+        <p>{{ _('The Provider will handle personal information obtained through the use of the Services in accordance with the \"Privacy Policy\" of the Services.') }}</p>
+        <h3>{{ _('Article 12 (Notifications and Communications)') }}</h3>
+        <p>{{ _('Notifications and communications between Users and the Provider shall be conducted via email to the Provider\'s email address stated in the Services. The Provider will only respond to communications in Japanese from Users. If necessary, translations should be conducted before communication.') }}</p>
+        <h3>{{ _('Article 13 (Prohibition of Assignment of Rights and Obligations)') }}</h3>
+        <p>{{ _('Users may not assign or provide as security their position under the usage contract or rights or obligations under these Terms to a third party without the prior written consent of the Provider.') }}</p>
+        <h3>{{ _('Article 14 (Governing Law and Jurisdiction)') }}</h3>
+        <p>{{ _('The interpretation of these Terms shall be governed by Japanese law. In the event of a dispute arising in relation to the Services, the court having jurisdiction over the location of the Provider shall have exclusive jurisdiction.') }}</p>
     </div>
+    
 {% endblock %}

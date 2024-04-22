@@ -1,11 +1,34 @@
 #use{
     display: flex; 
     margin: 0px auto;
+    align-items:left; 
     margin-top: 120px;
     background-color: rgb(235, 232, 226);
-    height: calc(100vh - 300px);
+    height: 100%;
     width: 60%;
     border-radius: 70px;
-    text-align: center;
+    text-align: left;
     flex-direction: column;
+    padding: 20px;
+}
+
+#use ul {
+    line-height: 1.6;  /* ulタグ内の行間を1.6に設定 */
+}
+
+#use li {
+    line-height: 1.4;  /* liタグ内の行間を1.4に設定 */
+    padding-left: 20px;
+}
+
+#use p {
+    line-height: 1.8;  /* pタグ内の行間を1.8に設定 */
+}
+
+h2{
+    padding-bottom: 5px;
+}
+
+h3{
+    padding-bottom: 3px
 }

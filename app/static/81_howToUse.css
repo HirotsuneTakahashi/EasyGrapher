@@ -1,11 +1,12 @@
 #how{
     display: flex; 
     margin: 0px auto;
+    align-items:left; 
     margin-top: 120px;
     background-color: rgb(235, 232, 226);
-    height: calc(100vh - 300px);
+    height: calc(100vh + 300px);
     width: 60%;
     border-radius: 70px;
-    text-align: center;
+    text-align: left;
     flex-direction: column;
 }
