@@ -10,53 +10,54 @@ from datetime import datetime
 from flask import session
 import uuid
 from werkzeug.utils import secure_filename
+from flask_babel import get_locale
 
 def init_app(app):
     @app.route('/')
     def home():
-        return render_template('01_home.html')
+        return render_template('01_home.html', locale=get_locale())
 
     @app.route('/loading')
     def loading():
-        return render_template('02_loading.html')
+        return render_template('02_loading.html', locale=get_locale())
 
     @app.route('/select')
     def select():
-        return render_template('03_select.html')
+        return render_template('03_select.html', locale=get_locale())
 
     @app.route('/answer')
     def answer():
-        return render_template('04_answer.html')  
+        return render_template('04_answer.html', locale=get_locale())  
     
     @app.route('/howToUse')
     def howToUse():
         next_page = request.args.get('next', None)
         #↑ボタンをHomeに変更するためのコマンド
-        return render_template('81_howToUse.html', next=next_page)
+        return render_template('81_howToUse.html', next=next_page, locale=get_locale())
     
     @app.route('/termsOfUse')
     def termsOfUse():
         next_page = request.args.get('next', None)
         #↑ボタンをHomeに変更するためのコマンド
-        return render_template('82_termsOfUse.html', next=next_page)
+        return render_template('82_termsOfUse.html', next=next_page, locale=get_locale())
     
     @app.route('/aboutThisSite')
     def aboutThisSite():
         next_page = request.args.get('next', None)
         #↑ボタンをHomeに変更するためのコマンド
-        return render_template('83_aboutThisSite.html', next=next_page)
+        return render_template('83_aboutThisSite.html', next=next_page, locale=get_locale())
     
     @app.route('/privacyPolicy')
     def privacyPolicy():
         next_page = request.args.get('next', None)
         #↑ボタンをHomeに変更するためのコマンド
-        return render_template('84_privacyPolicy.html', next=next_page)
+        return render_template('84_privacyPolicy.html', next=next_page, locale=get_locale())
     
     @app.route('/faq')
     def faq():
         next_page = request.args.get('next', None)
         #↑ボタンをHomeに変更するためのコマンド
-        return render_template('85_faq.html', next=next_page)
+        return render_template('85_faq.html', next=next_page, locale=get_locale())
     
     @app.route('/upload', methods=['GET', 'POST'])
     def upload_file():
@@ -81,7 +82,7 @@ def init_app(app):
                 os.remove(file_path)
                 graph(df)
     
-        return render_template('03_select.html')
+        return render_template('03_select.html', locale=get_locale())
     
     @app.route('/selectImage', methods=['POST'])
     def selectImage():
@@ -89,7 +90,7 @@ def init_app(app):
             # リクエストからデータを取得
             action = request.form['action']
             base64_graph = generate_base64_graph(action)
-            return render_template('04_answer.html', img_data=base64_graph, graph_type=action)
+            return render_template('04_answer.html', img_data=base64_graph, graph_type=action, locale=get_locale())
         
     @app.route('/customizeGraph', methods=['POST'])
     def customizeGraph():

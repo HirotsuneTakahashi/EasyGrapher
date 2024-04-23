@@ -8,7 +8,7 @@
 {% block title %}{{ _('Select') }} | {{ _('EasyGrapher') }}{% endblock %}
 
 {% block content %}
-    {{ super() }} <form action="/selectImage" method="POST">
+    {{ super() }} <form action="/selectImage?lang={{ locale }}" method="POST">
         <div id="container">
             <div class="image-group">
                 <img src="../static/images/graph_bar.png" class="bar">

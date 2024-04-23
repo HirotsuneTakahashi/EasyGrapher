@@ -17,6 +17,7 @@
             <li>{{ _('These Terms apply to all relationships related to the use of the Services between Users and the Provider.') }}</li>
             <li>{{ _('In addition to these Terms, the Provider may establish various rules and conditions ("Specific Provisions") related to the use of the Services. These Specific Provisions, regardless of their name, form part of these Terms.') }}</li>
             <li>{{ _('If there is any conflict between the provisions of these Terms and the Specific Provisions, the Specific Provisions shall prevail unless otherwise specified.') }}</li>
+            <li>{{ _('* This service creates graphs based on files received from users, including .xls and .xlsx files, and provides them to the users.') }}</li>
         </ul>
         <h3>{{ _('Article 2 (Use)') }}</h3>
         <ul>
@@ -70,6 +71,8 @@
                     <li>{{ _('Other circumstances where the Provider deems it difficult to provide the Services.') }}</li>
                 </ul>
             </li>
+            <li>{{ _('In the aforementioned cases, the Provider will not provide compensation, including alternative services, to Users.') }}</li>
+            <li>{{ _('The Provider is not liable for any disadvantage or damage incurred by Users or third parties due to the suspension or interruption of the Services.') }}</li>
         </ul>
         <h3>{{ _('Article 6 (Restrictions and Cancellation of Registration)') }}</h3>
         <ul>
@@ -80,12 +83,14 @@
                     <li>{{ _('The Provider deems the Use\'s use of the Services inappropriate.') }}</li>
                 </ul>
             </li>
+            <li>{{ _('The Provider is not liable for any damage incurred by the User resulting from actions taken under this article.') }}</li>
         </ul>
         <h3>{{ _('Article 7 (Disclaimer of Warranty and Limitation of Liability)') }}</h3>
         <ul>
             <li>{{ _('The Provider explicitly and implicitly does not guarantee that the Services are free of factual or legal defects (including defects related to safety, reliability, accuracy, completeness, effectiveness, fitness for a specific purpose, security, and rights infringement, such as defects, errors, or bugs).') }}</li>
             <li>{{ _('Except in cases of intentional or gross negligence, the Provider is not liable for any damages incurred by Users arising from the Services. However, if the contract between the Provider and the User concerning the Services (including these Terms) constitutes a consumer contract under the Consumer Contract Act, this exemption clause does not apply.') }}</li>
             <li>{{ _('Even in the cases provided in the proviso to the previous paragraph, the Provider is not liable for damages arising from special circumstances (including cases where the Provider or User could foresee or have foreseen the occurrence of damages), unless due to the Provider\'s negligence (excluding gross negligence). Compensation for damages caused by the Provider\'s negligence (excluding gross negligence) shall be limited to the amount of the usage fee received from the User in the month the damage occurred.') }}</li>
+            <li>{{ _('The Provider is not responsible for any transactions, communications, or disputes between Users and other Users or third parties regarding the Services.') }}</li>
         </ul>
         <h3>{{ _('Article 8 (Changes to Service Content)') }}</h3>
         <ul>
@@ -98,6 +103,7 @@
                     <li>{{ _('When the amendment of the Terms is deemed by the Provider to be in the general interest of the Users.') }}</li>
                     <li>{{ _('When the amendment does not contradict the purpose of the contract for the use of the Services, and is deemed reasonable in light of the necessity of the change, the content after the change, and other circumstances related to the amendment.') }}</li>
                 </ul>
+            <li>{{ _('The Provider may change the content of these Terms without prior notice, and Users agree to this.') }}</li>
             </li>
         </ul>
         <h3>{{ _('Article 10 (Copyright)') }}</h3>
@@ -109,7 +115,11 @@
         <h3>{{ _('Article 13 (Prohibition of Assignment of Rights and Obligations)') }}</h3>
         <p>{{ _('Users may not assign or provide as security their position under the usage contract or rights or obligations under these Terms to a third party without the prior written consent of the Provider.') }}</p>
         <h3>{{ _('Article 14 (Governing Law and Jurisdiction)') }}</h3>
-        <p>{{ _('The interpretation of these Terms shall be governed by Japanese law. In the event of a dispute arising in relation to the Services, the court having jurisdiction over the location of the Provider shall have exclusive jurisdiction.') }}</p>
+        <ul>
+            <li>{{ _('The interpretation of these Terms shall be governed by Japanese law.') }}</li>
+            <li>{{ _('In the event of a dispute arising in relation to the Services, the court having jurisdiction over the location of the Provider shall have exclusive jurisdiction.') }}</li>
+        </ul>
+        <p>{{ _('End') }}</p>
     </div>
     
 {% endblock %}

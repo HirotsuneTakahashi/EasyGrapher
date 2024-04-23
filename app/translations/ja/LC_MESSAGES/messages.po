@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-04-23 10:14+0900\n"
+"POT-Creation-Date: 2024-04-23 14:31+0900\n"
 "PO-Revision-Date: 2024-03-16 10:24+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -65,6 +65,11 @@ msgstr "ファイルを選択"
 msgid "File is not selected"
 msgstr "ファイルがありません"
 
+#: app/templates/01_home.html:17
+#, fuzzy
+msgid "loading"
+msgstr "ロード中"
+
 #: app/templates/01_home.html:17 app/templates/03_select.html:15
 #: app/templates/03_select.html:19 app/templates/03_select.html:23
 #: app/templates/03_select.html:27 app/templates/03_select.html:31
@@ -74,7 +79,7 @@ msgstr "決定する"
 
 #: app/templates/02_loading.html:8
 msgid "Loading page"
-msgstr "ロード中"
+msgstr "ロードページ"
 
 #: app/templates/03_select.html:8
 msgid "Select"
@@ -160,232 +165,261 @@ msgid ""
 "conditions (\"Specific Provisions\") related to the use of the Services. "
 "These Specific Provisions, regardless of their name, form part of these "
 "Terms."
-msgstr ""
+msgstr "提供者は本サービスに関し、本規約のほか、ご利用にあたってのルール等、各種の定め（以下、「個別規定」といいます。）をすることがあります。これら個別規定はその名称のいかんに関わらず、本規約の一部を構成するものとします。"
 
 #: app/templates/82_termsOfUse.html:19
 msgid ""
 "If there is any conflict between the provisions of these Terms and the "
 "Specific Provisions, the Specific Provisions shall prevail unless "
 "otherwise specified."
-msgstr ""
+msgstr "本規約の規定が前条の個別規定の規定と矛盾する場合には、個別規定において特段の定めなき限り、個別規定の規定が優先されるものとします。"
 
-#: app/templates/82_termsOfUse.html:21
-msgid "Article 2 (Use)"
-msgstr ""
-
-#: app/templates/82_termsOfUse.html:23
+#: app/templates/82_termsOfUse.html:20
 msgid ""
-"By using the Services, Users agree to these Terms and the separately "
-"stated privacy policy of the Services."
-msgstr ""
+"* This service creates graphs based on files received from users, "
+"including .xls and .xlsx files, and provides them to the users."
+msgstr "* 本サービスは、ユーザーから受け取った.xls、.xlsxを含むファイルを元にグラフを作成し、ユーザーに提供するサービスです。"
+
+#: app/templates/82_termsOfUse.html:22
+msgid "Article 2 (Use)"
+msgstr "第2条（利用）"
 
 #: app/templates/82_termsOfUse.html:24
 msgid ""
+"By using the Services, Users agree to these Terms and the separately "
+"stated privacy policy of the Services."
+msgstr "ユーザーが本サービスを利用した時点で、本規約及び別途記載された本サービスのプライバシーポリシーに同意するものとします。"
+
+#: app/templates/82_termsOfUse.html:25
+msgid ""
 "The Provider may deny further use of the Services without disclosure of "
 "reasons in the following cases:"
-msgstr ""
-
-#: app/templates/82_termsOfUse.html:26
-msgid ""
-"If the application is from someone who has previously violated these "
-"Terms."
-msgstr ""
+msgstr "提供者は、ユーザーに以下の事由があると判断した場合、以後本サービスの一切の利用を認めないことがあり、その理由については一切の開示義務を負わないものとします。"
 
 #: app/templates/82_termsOfUse.html:27
 msgid ""
+"If the application is from someone who has previously violated these "
+"Terms."
+msgstr "本規約に違反したことがある者"
+
+#: app/templates/82_termsOfUse.html:28
+msgid ""
 "If the Provider judges that the use of the Services by the User is not "
 "appropriate."
-msgstr ""
+msgstr "その他、提供者が、ユーザーの本サービスの利用が相当でないと判断した場合"
 
-#: app/templates/82_termsOfUse.html:31
+#: app/templates/82_termsOfUse.html:32
 msgid "Article 3 (About Provided Files)"
-msgstr ""
+msgstr "第3条（提供されたファイルについて）"
 
-#: app/templates/82_termsOfUse.html:33
+#: app/templates/82_termsOfUse.html:34
 msgid ""
 "When Users provide files, including .xls and .xlsx, for the use of the "
 "Services, they agree to the following:"
-msgstr ""
+msgstr "本サービスの利用のために、ユーザーが.xls、.xlsxを含むファイルを提供した場合、以下の事項に同意したものとします："
 
-#: app/templates/82_termsOfUse.html:35
+#: app/templates/82_termsOfUse.html:36
 msgid ""
 "The Provider does not guarantee the safety, integrity, or reliability of "
 "the provided files. Users accept the risk associated with providing "
 "files."
 msgstr ""
+"* "
+"提供されたファイルの安全性、完全性、または信頼性について、提供者は一切の保証を行いません。ユーザーは、ファイルを提供することにより発生するリスクを自己責任で承諾するものとします。"
 
-#: app/templates/82_termsOfUse.html:36
+#: app/templates/82_termsOfUse.html:37
 msgid ""
 "The Provider shall not be liable for any direct, indirect, incidental, "
 "special, or consequential damages arising from the provided files, to the"
 " fullest extent permitted by law."
 msgstr ""
+"* "
+"提供者は、ユーザーから提供されたファイルに起因するいかなる直接的、間接的、付随的、特別、派生的な損害に対しても、適用される法律が許す最大限において一切の責任を負わないものとします。"
 
-#: app/templates/82_termsOfUse.html:37
+#: app/templates/82_termsOfUse.html:38
 msgid ""
 "Regarding requests to delete files, the Provider will consider "
 "appropriate action based on technical or legal requirements, but does not"
 " guarantee the implementation of deletion."
-msgstr ""
+msgstr "ファイルの削除要求に関して、提供者は技術的または法的要件に基づき、削除が不可能な場合を除き、適切な対応を検討しますが、削除の実施を保証するものではありません。"
 
-#: app/templates/82_termsOfUse.html:41
+#: app/templates/82_termsOfUse.html:42
 msgid "Article 4 (Prohibitions)"
-msgstr ""
+msgstr "第4条（禁止事項）"
 
-#: app/templates/82_termsOfUse.html:43
+#: app/templates/82_termsOfUse.html:44
 msgid "Users must not engage in the following actions when using the Services:"
-msgstr ""
-
-#: app/templates/82_termsOfUse.html:45
-msgid "Violations of laws or public decency."
-msgstr ""
+msgstr "ユーザーは、本サービスの利用にあたり、以下の行為をしてはなりません。"
 
 #: app/templates/82_termsOfUse.html:46
-msgid "Acts related to criminal activities."
-msgstr ""
+msgid "Violations of laws or public decency."
+msgstr "法令または公序良俗に違反する行為"
 
 #: app/templates/82_termsOfUse.html:47
-msgid ""
-"Infringing on intellectual property rights such as copyrights and "
-"trademarks contained in the Services."
-msgstr ""
+msgid "Acts related to criminal activities."
+msgstr "犯罪行為に関連する行為"
 
 #: app/templates/82_termsOfUse.html:48
 msgid ""
-"Acts that destroy or interfere with the functionality of the Provider's "
-"or other Users' servers or networks."
-msgstr ""
+"Infringing on intellectual property rights such as copyrights and "
+"trademarks contained in the Services."
+msgstr "本サービスの内容等、本サービスに含まれる著作権、商標権ほか知的財産権を侵害する行為"
 
 #: app/templates/82_termsOfUse.html:49
 msgid ""
-"Commercially using information obtained from the Services without "
-"permission."
-msgstr ""
+"Acts that destroy or interfere with the functionality of the Provider's "
+"or other Users' servers or networks."
+msgstr "提供者、ほかのユーザー、またはその他第三者のサーバーまたはネットワークの機能を破壊したり、妨害したりする行為"
 
 #: app/templates/82_termsOfUse.html:50
 msgid ""
-"Actions that could interfere with the operation of the Provider's "
-"Services."
-msgstr ""
+"Commercially using information obtained from the Services without "
+"permission."
+msgstr "本サービスによって得られた情報を、事前の許可なく商業的に利用する行為"
 
 #: app/templates/82_termsOfUse.html:51
-msgid "Unauthorized access or attempts thereof."
-msgstr ""
+msgid ""
+"Actions that could interfere with the operation of the Provider's "
+"Services."
+msgstr "提供者のサービスの運営を妨害するおそれのある行為"
 
 #: app/templates/82_termsOfUse.html:52
-msgid "Collecting or storing personal information about other Users."
-msgstr ""
+msgid "Unauthorized access or attempts thereof."
+msgstr "不正アクセスをし、またはこれを試みる行為"
 
 #: app/templates/82_termsOfUse.html:53
-msgid "Using the Services for fraudulent purposes."
-msgstr ""
+msgid "Collecting or storing personal information about other Users."
+msgstr "他のユーザーに関する個人情報等を収集または蓄積する行為"
 
 #: app/templates/82_termsOfUse.html:54
+msgid "Using the Services for fraudulent purposes."
+msgstr "不正な目的を持って本サービスを利用する行為"
+
+#: app/templates/82_termsOfUse.html:55
 msgid ""
 "Acts that disadvantage, harm, or cause discomfort to other Users or third"
 " parties."
-msgstr ""
-
-#: app/templates/82_termsOfUse.html:55
-msgid "Impersonating another User."
-msgstr ""
+msgstr "本サービスの他のユーザーまたはその他の第三者に不利益、損害、不快感を与える行為"
 
 #: app/templates/82_termsOfUse.html:56
+msgid "Impersonating another User."
+msgstr "他のユーザーに成りすます行為"
+
+#: app/templates/82_termsOfUse.html:57
 msgid ""
 "Unauthorized advertising, soliciting, or commercial activities on the "
 "Services."
-msgstr ""
-
-#: app/templates/82_termsOfUse.html:57
-msgid "Acts aimed at meeting unknown persons of the opposite sex."
-msgstr ""
+msgstr "提供者が許諾しない本サービス上での宣伝、広告、勧誘、または営業行為"
 
 #: app/templates/82_termsOfUse.html:58
-msgid "Benefiting anti-social forces in connection with the Provider's Services."
-msgstr ""
+msgid "Acts aimed at meeting unknown persons of the opposite sex."
+msgstr "面識のない異性との出会いを目的とした行為"
 
 #: app/templates/82_termsOfUse.html:59
+msgid "Benefiting anti-social forces in connection with the Provider's Services."
+msgstr "提供者のサービスに関連して、反社会的勢力に対して直接または間接に利益を供与する行為"
+
+#: app/templates/82_termsOfUse.html:60
 msgid "Any other actions deemed inappropriate by the Provider."
-msgstr ""
+msgstr "その他、提供者が不適切と判断する行為"
 
-#: app/templates/82_termsOfUse.html:63
+#: app/templates/82_termsOfUse.html:64
 msgid "Article 5 (Suspension of Services)"
-msgstr ""
+msgstr "第5条（本サービスの提供の停止等）"
 
-#: app/templates/82_termsOfUse.html:65
+#: app/templates/82_termsOfUse.html:66
 msgid ""
 "The Provider may suspend or interrupt the provision of all or part of the"
 " Services without prior notice to Users if any of the following reasons "
 "occur:"
-msgstr ""
-
-#: app/templates/82_termsOfUse.html:67
-msgid ""
-"Maintenance, inspection, or updates of the computer system related to the"
-" Services."
-msgstr ""
+msgstr "提供者は、以下のいずれかの事由があると判断した場合、ユーザーに事前に通知することなく本サービスの全部または一部の提供を停止または中断することができるものとします。"
 
 #: app/templates/82_termsOfUse.html:68
 msgid ""
-"Force majeure events such as earthquakes, lightning, fire, power outages,"
-" or natural disasters make it difficult to provide the Services."
-msgstr ""
+"Maintenance, inspection, or updates of the computer system related to the"
+" Services."
+msgstr "本サービスにかかるコンピュータシステムの保守点検または更新を行う場合"
 
 #: app/templates/82_termsOfUse.html:69
-msgid "Accidents causing the stoppage of computers or communication lines."
-msgstr ""
+msgid ""
+"Force majeure events such as earthquakes, lightning, fire, power outages,"
+" or natural disasters make it difficult to provide the Services."
+msgstr "地震、落雷、火災、停電または天災などの不可抗力により、本サービスの提供が困難となった場合"
 
 #: app/templates/82_termsOfUse.html:70
+msgid "Accidents causing the stoppage of computers or communication lines."
+msgstr "コンピュータまたは通信回線等が事故により停止した場合"
+
+#: app/templates/82_termsOfUse.html:71
 msgid ""
 "Other circumstances where the Provider deems it difficult to provide the "
 "Services."
-msgstr ""
+msgstr "その他、提供者が本サービスの提供が困難と判断した場合"
 
 #: app/templates/82_termsOfUse.html:74
-msgid "Article 6 (Restrictions and Cancellation of Registration)"
-msgstr ""
+msgid ""
+"In the aforementioned cases, the Provider will not provide compensation, "
+"including alternative services, to Users."
+msgstr "上記に該当する場合、提供者が本サービスの停止または中断を行なうときに、ユーザーに対して代替サービスの提供などを含む一切の補償を行わないものとします。"
 
-#: app/templates/82_termsOfUse.html:76
+#: app/templates/82_termsOfUse.html:75
+msgid ""
+"The Provider is not liable for any disadvantage or damage incurred by "
+"Users or third parties due to the suspension or interruption of the "
+"Services."
+msgstr "提供者は、本サービスの提供の停止または中断により、ユーザーまたは第三者が被ったいかなる不利益または損害についても、一切の責任を負わないものとします。"
+
+#: app/templates/82_termsOfUse.html:77
+msgid "Article 6 (Restrictions and Cancellation of Registration)"
+msgstr "第6条（利用制限および登録抹消）"
+
+#: app/templates/82_termsOfUse.html:79
 msgid ""
 "The Provider may, without prior notice, restrict use of all or part of "
 "the Services or cancel the registration of a User if:"
-msgstr ""
+msgstr "提供者は、ユーザーが以下のいずれかに該当する場合には、事前の通知なく、ユーザーに対して、本サービスの全部もしくは一部の利用を制限し、またはユーザーとしての資格を抹消することができるものとします。"
 
-#: app/templates/82_termsOfUse.html:78
+#: app/templates/82_termsOfUse.html:81
 msgid "The User violates any provision of these Terms."
-msgstr ""
+msgstr "本規約のいずれかの条項に違反した場合"
 
-#: app/templates/82_termsOfUse.html:79
+#: app/templates/82_termsOfUse.html:82
 msgid "The User does not respond to communications from the Provider for a month."
-msgstr ""
+msgstr "提供者からの連絡に対し、一ヶ月間返答がない場合"
 
-#: app/templates/82_termsOfUse.html:80
+#: app/templates/82_termsOfUse.html:83
 msgid "The Provider deems the Use's use of the Services inappropriate."
-msgstr ""
-
-#: app/templates/82_termsOfUse.html:84
-msgid "Article 7 (Disclaimer of Warranty and Limitation of Liability)"
-msgstr ""
+msgstr "その他、提供者が本サービスの利用を適当でないと判断した場合"
 
 #: app/templates/82_termsOfUse.html:86
+msgid ""
+"The Provider is not liable for any damage incurred by the User resulting "
+"from actions taken under this article."
+msgstr "提供者は、本条に基づき提供者が行った行為によりユーザーに生じた損害について、一切の責任を負いません。"
+
+#: app/templates/82_termsOfUse.html:88
+msgid "Article 7 (Disclaimer of Warranty and Limitation of Liability)"
+msgstr "第7条（保証の否認および免責事項）"
+
+#: app/templates/82_termsOfUse.html:90
 msgid ""
 "The Provider explicitly and implicitly does not guarantee that the "
 "Services are free of factual or legal defects (including defects related "
 "to safety, reliability, accuracy, completeness, effectiveness, fitness "
 "for a specific purpose, security, and rights infringement, such as "
 "defects, errors, or bugs)."
-msgstr ""
+msgstr "提供者は、本サービスに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます。）がないことを明示的にも黙示的にも保証しておりません。"
 
-#: app/templates/82_termsOfUse.html:87
+#: app/templates/82_termsOfUse.html:91
 msgid ""
 "Except in cases of intentional or gross negligence, the Provider is not "
 "liable for any damages incurred by Users arising from the Services. "
 "However, if the contract between the Provider and the User concerning the"
 " Services (including these Terms) constitutes a consumer contract under "
 "the Consumer Contract Act, this exemption clause does not apply."
-msgstr ""
+msgstr "提供者は、本サービスに起因してユーザーに生じたあらゆる損害について、提供者の故意又は重過失による場合を除き、一切の責任を負いません。ただし、本サービスに関する提供者とユーザーとの間の契約（本規約を含みます。）が消費者契約法に定める消費者契約となる場合、この免責規定は適用されません。"
 
-#: app/templates/82_termsOfUse.html:88
+#: app/templates/82_termsOfUse.html:92
 msgid ""
 "Even in the cases provided in the proviso to the previous paragraph, the "
 "Provider is not liable for damages arising from special circumstances "
@@ -395,103 +429,123 @@ msgid ""
 "by the Provider's negligence (excluding gross negligence) shall be "
 "limited to the amount of the usage fee received from the User in the "
 "month the damage occurred."
-msgstr ""
+msgstr "前項ただし書に定める場合であっても、提供者は、提供者の過失（重過失を除きます。）による債務不履行または不法行為によりユーザーに生じた損害のうち特別な事情から生じた損害（提供者またはユーザーが損害発生につき予見し、または予見し得た場合を含みます。）について一切の責任を負いません。また、提供者の過失（重過失を除きます。）による不法行為によりユーザーに生じた損害の賠償は、ユーザーから当該損害が発生した月に受領した利用料の額を上限とします。"
 
-#: app/templates/82_termsOfUse.html:90
+#: app/templates/82_termsOfUse.html:93
+msgid ""
+"The Provider is not responsible for any transactions, communications, or "
+"disputes between Users and other Users or third parties regarding the "
+"Services."
+msgstr "提供者は、本サービスに関して、ユーザーと他のユーザーまたは第三者との間において生じた取引、連絡または紛争等について一切責任を負いません。"
+
+#: app/templates/82_termsOfUse.html:95
 msgid "Article 8 (Changes to Service Content)"
-msgstr ""
+msgstr "第8条（サービス内容の変更等）"
 
-#: app/templates/82_termsOfUse.html:92
+#: app/templates/82_termsOfUse.html:97
 msgid ""
 "The Provider may change, add, or discontinue the content of the Services "
 "without prior notice to Users. However, if the Provider judges that a "
 "change in the content of the Services significantly alters the essence of"
 " the Services, prior notice will be given."
-msgstr ""
+msgstr "提供者は、ユーザーへの事前告知なく、本サービスの内容を変更、追加または廃止することがあり、ユーザーはこれを承諾するものとします。ただし、本サービス内容の変更により、本サービスの趣旨が大きく変わる可能性があると提供者が判断した場合には、事前告知を行うものとします。"
 
-#: app/templates/82_termsOfUse.html:94
+#: app/templates/82_termsOfUse.html:99
 msgid "Article 9 (Amendment of Terms)"
-msgstr ""
+msgstr "第9条（利用規約の変更）"
 
-#: app/templates/82_termsOfUse.html:96
+#: app/templates/82_termsOfUse.html:101
 msgid ""
 "The Provider may amend these Terms without the individual consent of the "
 "Users in the following cases:"
-msgstr ""
+msgstr "提供者は以下の場合には、ユーザーの個別の同意を要せず、本規約を変更することができるものとします。"
 
-#: app/templates/82_termsOfUse.html:98
+#: app/templates/82_termsOfUse.html:103
 msgid ""
 "When the amendment of the Terms is deemed by the Provider to be in the "
 "general interest of the Users."
-msgstr ""
+msgstr "本規約の変更がユーザーの一般の利益に適合すると、提供者が判断したとき。"
 
-#: app/templates/82_termsOfUse.html:99
+#: app/templates/82_termsOfUse.html:104
 msgid ""
 "When the amendment does not contradict the purpose of the contract for "
 "the use of the Services, and is deemed reasonable in light of the "
 "necessity of the change, the content after the change, and other "
 "circumstances related to the amendment."
-msgstr ""
-
-#: app/templates/82_termsOfUse.html:103
-msgid "Article 10 (Copyright)"
-msgstr ""
-
-#: app/templates/82_termsOfUse.html:104
-msgid ""
-"The copyright of the Services is held by Hirotsune Takahashi, the "
-"Provider."
-msgstr ""
-
-#: app/templates/82_termsOfUse.html:105
-msgid "Article 11 (Handling of Personal Information)"
-msgstr ""
+msgstr "本規約の変更が本サービス利用契約の目的に反せず、かつ、変更の必要性、変更後の内容の相当性その他の変更に係る事情に照らして合理的なものであるとき。"
 
 #: app/templates/82_termsOfUse.html:106
 msgid ""
+"The Provider may change the content of these Terms without prior notice, "
+"and Users agree to this."
+msgstr "提供者はユーザーに対し、前項による本規約の変更にあたり、事前の告知なく本規約内容を変更できるものとし、ユーザーはこれに同意するものとします。"
+
+#: app/templates/82_termsOfUse.html:109
+msgid "Article 10 (Copyright)"
+msgstr "第10条（著作権）"
+
+#: app/templates/82_termsOfUse.html:110
+msgid ""
+"The copyright of the Services is held by Hirotsune Takahashi, the "
+"Provider."
+msgstr "本サービスの著作権は、提供者である高橋博経が保持するものとします。"
+
+#: app/templates/82_termsOfUse.html:111
+msgid "Article 11 (Handling of Personal Information)"
+msgstr "第11条（個人情報の取扱い）"
+
+#: app/templates/82_termsOfUse.html:112
+msgid ""
 "The Provider will handle personal information obtained through the use of"
 " the Services in accordance with the \"Privacy Policy\" of the Services."
-msgstr ""
+msgstr "提供者は、本サービスの利用によって取得する個人情報については、本サービスの「プライバシーポリシー」に従い適切に取り扱うものとします。"
 
-#: app/templates/82_termsOfUse.html:107
+#: app/templates/82_termsOfUse.html:113
 msgid "Article 12 (Notifications and Communications)"
-msgstr ""
+msgstr "第12条（通知または連絡）"
 
-#: app/templates/82_termsOfUse.html:108
+#: app/templates/82_termsOfUse.html:114
 msgid ""
 "Notifications and communications between Users and the Provider shall be "
 "conducted via email to the Provider's email address stated in the "
 "Services. The Provider will only respond to communications in Japanese "
 "from Users. If necessary, translations should be conducted before "
 "communication."
-msgstr ""
+msgstr "ユーザーと提供者との間の通知または連絡は、本サービスに記載された、提供者のメールアドレスに宛てたメールによって行うものとします。また、提供者はユーザーからの日本語での連絡のみ、対応するものとします。必要に応じて、翻訳を行なった上で連絡してください。"
 
-#: app/templates/82_termsOfUse.html:109
+#: app/templates/82_termsOfUse.html:115
 msgid "Article 13 (Prohibition of Assignment of Rights and Obligations)"
-msgstr ""
+msgstr "第13条（権利義務の譲渡の禁止）"
 
-#: app/templates/82_termsOfUse.html:110
+#: app/templates/82_termsOfUse.html:116
 msgid ""
 "Users may not assign or provide as security their position under the "
 "usage contract or rights or obligations under these Terms to a third "
 "party without the prior written consent of the Provider."
-msgstr ""
+msgstr "ユーザーは、提供者の書面による事前の承諾なく、利用契約上の地位または本規約に基づく権利もしくは義務を第三者に譲渡し、または担保に供することはできません。"
 
-#: app/templates/82_termsOfUse.html:111
+#: app/templates/82_termsOfUse.html:117
 msgid "Article 14 (Governing Law and Jurisdiction)"
-msgstr ""
+msgstr "第14条（準拠法・裁判管轄）"
 
-#: app/templates/82_termsOfUse.html:112
+#: app/templates/82_termsOfUse.html:119
+msgid "The interpretation of these Terms shall be governed by Japanese law."
+msgstr "本規約の解釈にあたっては、日本法を準拠法とします。"
+
+#: app/templates/82_termsOfUse.html:120
 msgid ""
-"The interpretation of these Terms shall be governed by Japanese law. In "
-"the event of a dispute arising in relation to the Services, the court "
+"In the event of a dispute arising in relation to the Services, the court "
 "having jurisdiction over the location of the Provider shall have "
 "exclusive jurisdiction."
-msgstr ""
+msgstr "本サービスに関して紛争が生じた場合には、提供者の所在地を管轄する裁判所を専属的合意管轄とします。"
+
+#: app/templates/82_termsOfUse.html:122 app/templates/84_privacyPolicy.html:70
+msgid "End"
+msgstr "以上"
 
 #: app/templates/84_privacyPolicy.html:8
 msgid "Privacy policy"
-msgstr ""
+msgstr "プライバシーポリシー"
 
 #: app/templates/84_privacyPolicy.html:14
 msgid ""
@@ -500,11 +554,11 @@ msgid ""
 "Policy\") regarding the handling of users' personal information in the "
 "services provided on this website (hereinafter referred to as \"the "
 "Service\")."
-msgstr ""
+msgstr "高橋博経（以下、「提供者」といいます。）は、本ウェブサイト上で提供するサービス（以下、「本サービス」といいます。）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。"
 
 #: app/templates/84_privacyPolicy.html:15
 msgid "Article 1 (Personal Information)"
-msgstr ""
+msgstr "第1条（個人情報）"
 
 #: app/templates/84_privacyPolicy.html:16
 msgid ""
@@ -519,140 +573,147 @@ msgid ""
 "information related to files provided by users in the use of the Service "
 "shall be handled in accordance with the separately stated Terms of Use, "
 "Article 3."
-msgstr ""
+msgstr "「個人情報」とは、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日、住所、電話番号、連絡先その他の記述等により特定の個人を識別できる情報及び容貌、指紋、声紋にかかるデータ、及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。また、本サービスを利用する上でユーザーが提供したファイルを含む情報に関しては、別記された利用規約第３条に基づいて扱うものとします。"
 
 #: app/templates/84_privacyPolicy.html:17
 msgid "Article 2 (Method of Collection of Personal Information)"
-msgstr ""
+msgstr "第2条（個人情報の収集方法）"
 
 #: app/templates/84_privacyPolicy.html:18
 msgid ""
 "The Provider may ask for personal information such as name, date of "
 "birth, address, telephone number, and email address when users utilize "
 "the Service."
-msgstr ""
+msgstr "提供者は、ユーザーが本サービスを利用する際に氏名、生年月日、住所、電話番号、メールアドレスなどの個人情報をお尋ねすることがあります。"
 
 #: app/templates/84_privacyPolicy.html:19
 msgid "Article 3 (Purpose of Collecting and Using Personal Information)"
-msgstr ""
+msgstr "第3条（個人情報を収集・利用する目的）"
 
-#: app/templates/84_privacyPolicy.html:21
-msgid "To provide and operate the services of the Provider"
-msgstr ""
+#: app/templates/84_privacyPolicy.html:20
+#, fuzzy
+msgid ""
+"The purposes for which the Provider collects and uses personal "
+"information are as follows:"
+msgstr "提供者が個人情報を収集・利用する目的は、以下のとおりです。"
 
 #: app/templates/84_privacyPolicy.html:22
-msgid ""
-"To respond to inquiries from users (including verifying the person's "
-"identity)"
-msgstr ""
+msgid "To provide and operate the services of the Provider"
+msgstr "提供者サービスの提供・運営のため"
 
 #: app/templates/84_privacyPolicy.html:23
 msgid ""
-"To identify users who violate the terms of use or attempt to use the "
-"service for fraudulent or unjust purposes, and to refuse their use"
-msgstr ""
+"To respond to inquiries from users (including verifying the person's "
+"identity)"
+msgstr "ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）"
 
 #: app/templates/84_privacyPolicy.html:24
-msgid "For purposes incidental to the above objectives"
-msgstr ""
-
-#: app/templates/84_privacyPolicy.html:26
-msgid "Article 4 (Change of Purpose of Use)"
-msgstr ""
-
-#: app/templates/84_privacyPolicy.html:28
 msgid ""
-"The Provider may change the purpose of use of personal information only "
-"if it is reasonably recognized to be related to the original purposes."
-msgstr ""
+"To identify users who violate the terms of use or attempt to use the "
+"service for fraudulent or unjust purposes, and to refuse their use"
+msgstr "利用規約に違反したユーザーや、不正・不当な目的でサービスを利用しようとするユーザーの特定をし、ご利用をお断りするため"
+
+#: app/templates/84_privacyPolicy.html:25
+msgid "For purposes incidental to the above objectives"
+msgstr "上記の利用目的に付随する目的"
+
+#: app/templates/84_privacyPolicy.html:27
+msgid "Article 4 (Change of Purpose of Use)"
+msgstr "第4条（利用目的の変更）"
 
 #: app/templates/84_privacyPolicy.html:29
 msgid ""
+"The Provider may change the purpose of use of personal information only "
+"if it is reasonably recognized to be related to the original purposes."
+msgstr "提供者は、利用目的が変更前と関連性を有すると合理的に認められる場合に限り、個人情報の利用目的を変更するものとします。"
+
+#: app/templates/84_privacyPolicy.html:30
+msgid ""
 "When changing the purpose of use, the Provider will notify users of the "
 "changed purposes through postings on the Service's web page."
-msgstr ""
+msgstr "利用目的の変更を行った場合には、変更後の目的について、本サービスのwebページへの記載によってユーザーに通知するものとします。"
 
-#: app/templates/84_privacyPolicy.html:31
+#: app/templates/84_privacyPolicy.html:32
 msgid "Article 5 (Provision of Personal Information to Third Parties)"
-msgstr ""
+msgstr "第5条（個人情報の第三者提供）"
 
-#: app/templates/84_privacyPolicy.html:33
+#: app/templates/84_privacyPolicy.html:34
 msgid ""
 "The Provider will not provide personal information to third parties "
 "without obtaining the user's prior consent, except as permitted by the "
 "Personal Information Protection Law or other laws. However, the following"
 " cases are exceptions:"
-msgstr ""
+msgstr "提供者は、次に掲げる場合を除いて、あらかじめユーザーの同意を得ることなく、第三者に個人情報を提供することはありません。ただし、個人情報保護法その他の法令で認められる場合を除きます。"
 
-#: app/templates/84_privacyPolicy.html:35
+#: app/templates/84_privacyPolicy.html:36
 msgid ""
 "When it is necessary to protect a person's life, body, or property and it"
 " is difficult to obtain the consent of the person"
-msgstr ""
+msgstr "人の生命、身体または財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき"
 
-#: app/templates/84_privacyPolicy.html:36
+#: app/templates/84_privacyPolicy.html:37
 msgid ""
 "When it is particularly necessary for improving public health or "
 "promoting the sound growth of children and it is difficult to obtain the "
 "consent of the person"
-msgstr ""
+msgstr "公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難であるとき"
 
-#: app/templates/84_privacyPolicy.html:37
+#: app/templates/84_privacyPolicy.html:38
 msgid ""
 "When there is a need to cooperate with a national institution, a local "
 "public entity, or an individual or entity entrusted by them to execute "
 "legal affairs, and obtaining the consent of the person might impede the "
 "execution of the affairs"
-msgstr ""
+msgstr "国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき"
 
-#: app/templates/84_privacyPolicy.html:38
+#: app/templates/84_privacyPolicy.html:39
 msgid ""
 "When the following matters have been notified or publicly announced in "
 "advance, and the Provider has filed a notification with the Personal "
 "Information Protection Commission:"
-msgstr ""
-
-#: app/templates/84_privacyPolicy.html:40
-msgid "Including the provision to third parties in the purpose of use"
-msgstr ""
+msgstr "予め次の事項を告知あるいは公表し、かつ提供者が個人情報保護委員会に届出をしたとき"
 
 #: app/templates/84_privacyPolicy.html:41
-msgid "Items of data provided to third parties"
-msgstr ""
+msgid "Including the provision to third parties in the purpose of use"
+msgstr "利用目的に第三者への提供を含むこと"
 
 #: app/templates/84_privacyPolicy.html:42
-msgid "Means or method of provision to third parties"
-msgstr ""
+msgid "Items of data provided to third parties"
+msgstr "第三者に提供されるデータの項目"
 
 #: app/templates/84_privacyPolicy.html:43
+msgid "Means or method of provision to third parties"
+msgstr "第三者への提供の手段または方法"
+
+#: app/templates/84_privacyPolicy.html:44
 msgid ""
 "Stopping the provision of personal information to third parties upon the "
 "request of the person"
-msgstr ""
+msgstr "本人の求めに応じて個人情報の第三者への提供を停止すること"
 
-#: app/templates/84_privacyPolicy.html:44
+#: app/templates/84_privacyPolicy.html:45
 msgid "Method for accepting the request from the person"
-msgstr ""
+msgstr "本人の求めを受け付ける方法"
 
-#: app/templates/84_privacyPolicy.html:49
+#: app/templates/84_privacyPolicy.html:50
 msgid ""
 "Notwithstanding the provisions of the preceding paragraph, the following "
 "cases shall not be considered third parties:"
-msgstr ""
-
-#: app/templates/84_privacyPolicy.html:51
-msgid ""
-"When the Provider entrusts the handling of personal information within "
-"the scope necessary to achieve the purpose of use"
-msgstr ""
+msgstr "前項の定めにかかわらず、次に掲げる場合には、当該情報の提供先は第三者に該当しないものとします。"
 
 #: app/templates/84_privacyPolicy.html:52
 msgid ""
-"When personal information is provided in connection with business "
-"succession due to merger or other reasons"
-msgstr ""
+"When the Provider entrusts the handling of personal information within "
+"the scope necessary to achieve the purpose of use"
+msgstr "提供者が利用目的の達成に必要な範囲内において個人情報の取扱いの全部または一部を委託する場合"
 
 #: app/templates/84_privacyPolicy.html:53
+msgid ""
+"When personal information is provided in connection with business "
+"succession due to merger or other reasons"
+msgstr "合併その他の事由による事業の承継に伴って個人情報が提供される場合"
+
+#: app/templates/84_privacyPolicy.html:54
 msgid ""
 "When personal information is used jointly between specific parties, and "
 "this fact along with the items of personal information being jointly "
@@ -660,68 +721,75 @@ msgid ""
 "users, and the name or name of the entity responsible for managing the "
 "personal information has been notified to the person in advance, or has "
 "been made readily available to the person"
-msgstr ""
+msgstr "個人情報を特定の者との間で共同して利用する場合であって、その旨並びに共同して利用される個人情報の項目、共同して利用する者の範囲、利用する者の利用目的および当該個人情報の管理について責任を有する者の氏名または名称について、あらかじめ本人に通知し、または本人が容易に知り得る状態に置いた場合"
 
-#: app/templates/84_privacyPolicy.html:57
+#: app/templates/84_privacyPolicy.html:58
 msgid "Article 6 (Suspension of Use of Personal Information, etc.)"
-msgstr ""
+msgstr "第6条（個人情報の利用停止等）"
 
-#: app/templates/84_privacyPolicy.html:59
+#: app/templates/84_privacyPolicy.html:60
 msgid ""
 "If requested by the person, the Provider will conduct the necessary "
 "investigation without delay if personal information is being handled "
 "beyond the scope of the intended use or was collected by wrongful means."
-msgstr ""
+msgstr "提供者は、本人から、個人情報が、利用目的の範囲を超えて取り扱われているという理由、または不正の手段により取得されたものであるという理由により、その利用の停止または消去（以下、「利用停止等」といいます。）を求められた場合には、遅滞なく必要な調査を行います。"
 
-#: app/templates/84_privacyPolicy.html:60
+#: app/templates/84_privacyPolicy.html:61
 msgid ""
 "Based on the result of the investigation, if it is necessary to respond "
 "to the request, the Provider will stop using or delete the personal "
 "information without delay."
-msgstr ""
+msgstr "前項の調査結果に基づき、その請求に応じる必要があると判断した場合には、遅滞なく、当該個人情報の利用停止等を行います。"
 
-#: app/templates/84_privacyPolicy.html:61
+#: app/templates/84_privacyPolicy.html:62
 msgid ""
 "If the Provider decides to stop the use of personal information based on "
 "the provisions of the previous paragraph, or if it decides not to stop "
 "the use, it will notify the user without delay."
-msgstr ""
+msgstr "提供者は、前項の規定に基づき利用停止等を行った場合、または利用停止等を行わない旨の決定をしたときは、遅滞なく、これをユーザーに通知します。"
 
-#: app/templates/84_privacyPolicy.html:62
+#: app/templates/84_privacyPolicy.html:63
 msgid ""
 "Notwithstanding the previous two paragraphs, if stopping the use of "
 "personal information involves excessive costs or is difficult for other "
 "reasons, and if alternative measures necessary to protect the rights and "
 "interests of the user can be taken, such alternative measures shall be "
 "taken."
-msgstr ""
-
-#: app/templates/84_privacyPolicy.html:64
-msgid "Article 7 (Changes to the Privacy Policy)"
-msgstr ""
+msgstr "前2項にかかわらず、利用停止等に多額の費用を有する場合その他利用停止等を行うことが困難な場合であって、ユーザーの権利利益を保護するために必要なこれに代わるべき措置をとれる場合は、この代替策を講じるものとします。"
 
 #: app/templates/84_privacyPolicy.html:65
+msgid "Article 7 (Changes to the Privacy Policy)"
+msgstr "第7条（プライバシーポリシーの変更"
+
+#: app/templates/84_privacyPolicy.html:66
 msgid ""
 "The contents of this Policy can be changed without notifying the user "
 "except as otherwise specifically provided in laws and regulations or in "
 "this Policy."
-msgstr ""
+msgstr "本ポリシーの内容は、法令その他本ポリシーに別段の定めのある事項を除いて、ユーザーに通知することなく、変更することができるものとします。"
 
-#: app/templates/84_privacyPolicy.html:66
+#: app/templates/84_privacyPolicy.html:67
 msgid ""
 "Unless otherwise specified by the Provider, the amended Privacy Policy "
 "shall come into effect when posted on this website."
-msgstr ""
-
-#: app/templates/84_privacyPolicy.html:67
-msgid "Article 8 (Contact for Inquiries)"
-msgstr ""
+msgstr "提供者が別途定める場合を除いて、変更後のプライバシーポリシーは、本ウェブサイトに掲載したときから効力を生じるものとします。"
 
 #: app/templates/84_privacyPolicy.html:68
+msgid "Article 8 (Contact for Inquiries)"
+msgstr "第8条（お問い合わせ窓口）"
+
+#: app/templates/84_privacyPolicy.html:69
 msgid ""
 "For inquiries regarding this Policy, please contact the Provider's email "
 "address listed on the Service's web page. Please note that inquiries are "
 "accepted only in Japanese. If necessary, please translate before sending "
 "an email."
-msgstr ""
+msgstr "本ポリシーに関するお問い合わせは、本サービスのwebページに記載された提供者のメールアドレスまでお願いいたします。また、言語については日本語での問い合わせのみ対応させて頂きます。必要に応じて翻訳など行なってからメールを送信してください。"
+
+#~ msgid ""
+#~ "* The Provider is not liable for"
+#~ " any damage incurred by the User "
+#~ "resulting from actions taken under this"
+#~ " article."
+#~ msgstr ""
 
