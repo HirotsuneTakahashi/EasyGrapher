@@ -2,27 +2,29 @@
     display: flex; 
     margin: 0px auto;
     align-items:left; 
-    margin-top: 120px;
+    margin-top: 60px;
     background-color: rgb(235, 232, 226);
     height: 100%;
-    width: 60%;
-    border-radius: 70px;
+    width: 80%;
+    border-radius: 20px;
     text-align: left;
     flex-direction: column;
     padding: 20px;
+    color: rgb(51,51,51);
 }
 
 #use ul {
     line-height: 1.6;  /* ulタグ内の行間を1.6に設定 */
-}
-
-#use li {
-    line-height: 1.4;  /* liタグ内の行間を1.4に設定 */
     padding-left: 20px;
 }
 
+#use li {
+    line-height: 1.6;  /* liタグ内の行間を1.4に設定 */
+}
+
 #use p {
-    line-height: 1.8;  /* pタグ内の行間を1.8に設定 */
+    line-height: 1.6;  /* pタグ内の行間を1.8に設定 */
+    padding-left: 10px;
 }
 
 h2{
@@ -30,5 +32,7 @@ h2{
 }
 
 h3{
-    padding-bottom: 3px
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-top: 10px
 }

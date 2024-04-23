@@ -10,6 +10,61 @@
 {% block content %}
     {{ super() }}
     <div id="privacy">
-        
+        <h2>{{ _('Privacy Policy') }}</h2>
+        <p>{{ _('Hirotsune Takahashi (hereinafter referred to as "the Provider") establishes this Privacy Policy (hereinafter referred to as "this Policy") regarding the handling of users\' personal information in the services provided on this website (hereinafter referred to as "the Service").') }}</p>
+        <h3>{{ _('Article 1 (Personal Information)') }}</h3>
+        <p>{{ _('"Personal Information" shall refer to "personal information" as defined by the Personal Information Protection Law, and includes information about a living individual which can identify the specific individual by name, date of birth, address, telephone number, contact information, and other descriptions contained in the information, data on physical appearance, fingerprints, and voice prints, and information such as the insurer number on a health insurance card that can identify the specific individual from the information alone. Additionally, information related to files provided by users in the use of the Service shall be handled in accordance with the separately stated Terms of Use, Article 3.') }}</p>
+        <h3>{{ _('Article 2 (Method of Collection of Personal Information)') }}</h3>
+        <p>{{ _('The Provider may ask for personal information such as name, date of birth, address, telephone number, and email address when users utilize the Service.') }}</p>
+        <h3>{{ _('Article 3 (Purpose of Collecting and Using Personal Information)') }}</h3>
+        <ul>
+            <li>{{ _('To provide and operate the services of the Provider') }}</li>
+            <li>{{ _('To respond to inquiries from users (including verifying the person\'s identity)') }}</li>
+            <li>{{ _('To identify users who violate the terms of use or attempt to use the service for fraudulent or unjust purposes, and to refuse their use') }}</li>
+            <li>{{ _('For purposes incidental to the above objectives') }}</li>
+        </ul>
+        <h3>{{ _('Article 4 (Change of Purpose of Use)') }}</h3>
+        <ul>
+            <li>{{ _('The Provider may change the purpose of use of personal information only if it is reasonably recognized to be related to the original purposes.') }}</li>
+            <li>{{ _('When changing the purpose of use, the Provider will notify users of the changed purposes through postings on the Service\'s web page.') }}</li>
+        </ul>
+        <h3>{{ _('Article 5 (Provision of Personal Information to Third Parties)') }}</h3>
+        <ul>
+            <li>{{ _('The Provider will not provide personal information to third parties without obtaining the user\'s prior consent, except as permitted by the Personal Information Protection Law or other laws. However, the following cases are exceptions:') }}
+                <ul>
+                    <li>{{ _('When it is necessary to protect a person\'s life, body, or property and it is difficult to obtain the consent of the person') }}</li>
+                    <li>{{ _('When it is particularly necessary for improving public health or promoting the sound growth of children and it is difficult to obtain the consent of the person') }}</li>
+                    <li>{{ _('When there is a need to cooperate with a national institution, a local public entity, or an individual or entity entrusted by them to execute legal affairs, and obtaining the consent of the person might impede the execution of the affairs') }}</li>
+                    <li>{{ _('When the following matters have been notified or publicly announced in advance, and the Provider has filed a notification with the Personal Information Protection Commission:') }}
+                        <ul>
+                            <li>{{ _('Including the provision to third parties in the purpose of use') }}</li>
+                            <li>{{ _('Items of data provided to third parties') }}</li>
+                            <li>{{ _('Means or method of provision to third parties') }}</li>
+                            <li>{{ _('Stopping the provision of personal information to third parties upon the request of the person') }}</li>
+                            <li>{{ _('Method for accepting the request from the person') }}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>{{ _('Notwithstanding the provisions of the preceding paragraph, the following cases shall not be considered third parties:') }}
+                <ul>
+                    <li>{{ _('When the Provider entrusts the handling of personal information within the scope necessary to achieve the purpose of use') }}</li>
+                    <li>{{ _('When personal information is provided in connection with business succession due to merger or other reasons') }}</li>
+                    <li>{{ _('When personal information is used jointly between specific parties, and this fact along with the items of personal information being jointly used, the scope of the joint users, the purpose of use of the joint users, and the name or name of the entity responsible for managing the personal information has been notified to the person in advance, or has been made readily available to the person') }}</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>{{ _('Article 6 (Suspension of Use of Personal Information, etc.)') }}</h3>
+        <ul>
+            <li>{{ _('If requested by the person, the Provider will conduct the necessary investigation without delay if personal information is being handled beyond the scope of the intended use or was collected by wrongful means.') }}</li>
+            <li>{{ _('Based on the result of the investigation, if it is necessary to respond to the request, the Provider will stop using or delete the personal information without delay.') }}</li>
+            <li>{{ _('If the Provider decides to stop the use of personal information based on the provisions of the previous paragraph, or if it decides not to stop the use, it will notify the user without delay.') }}</li>
+            <li>{{ _('Notwithstanding the previous two paragraphs, if stopping the use of personal information involves excessive costs or is difficult for other reasons, and if alternative measures necessary to protect the rights and interests of the user can be taken, such alternative measures shall be taken.') }}</li>
+        </ul>
+        <h3>{{ _('Article 7 (Changes to the Privacy Policy)') }}</h3>
+        <p>{{ _('The contents of this Policy can be changed without notifying the user except as otherwise specifically provided in laws and regulations or in this Policy.') }}</p>
+        <p>{{ _('Unless otherwise specified by the Provider, the amended Privacy Policy shall come into effect when posted on this website.') }}</p>
+        <h3>{{ _('Article 8 (Contact for Inquiries)') }}</h3>
+        <p>{{ _('For inquiries regarding this Policy, please contact the Provider\'s email address listed on the Service\'s web page. Please note that inquiries are accepted only in Japanese. If necessary, please translate before sending an email.') }}</p>
     </div>
 {% endblock %}
