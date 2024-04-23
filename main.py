@@ -19,8 +19,8 @@ def delete_files():
         os.remove(file)
 
 def open_browser():
-      #webbrowser.open_new('http://127.0.0.1:5000/?lang=ja')
-      webbrowser.open_new('http://127.0.0.1:5000/?lang=en')
+      webbrowser.open_new('http://127.0.0.1:5000/?lang=ja')
+      #webbrowser.open_new('http://127.0.0.1:5000/?lang=en')
 
 app = create_app()
 app.config['UPLOAD_FOLDER'] = os.path.join(os.getcwd(), 'uploads')  # アップロードされたファイルを保存するディレクトリ
