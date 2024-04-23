@@ -35,7 +35,7 @@ scheduler.start()
 scheduler.add_job(delete_files, 'date', run_date=datetime.now() + timedelta(hours=1))
 
 if __name__ == '__main__':
-    threading.Timer(1.25, open_browser).start()
+    #threading.Timer(1.25, open_browser).start()
     app.run(debug=True,
             #use_reloader=False
     )
