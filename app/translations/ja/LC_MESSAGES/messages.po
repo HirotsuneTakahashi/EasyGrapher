@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-04-23 14:31+0900\n"
+"POT-Creation-Date: 2024-04-23 14:55+0900\n"
 "PO-Revision-Date: 2024-03-16 10:24+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -45,6 +45,7 @@ msgid "Privacy Policy"
 msgstr "プライバシーポリシー"
 
 #: app/templates/00_base.html:43 app/templates/85_faq.html:8
+#: app/templates/85_faq.html:13
 msgid "FAQ"
 msgstr "FAQ"
 
@@ -140,6 +141,10 @@ msgstr "変更を適用"
 #: app/templates/04_answer.html:29
 msgid "Download"
 msgstr "ダウンロード"
+
+#: app/templates/81_howToUse.html:13 app/templates/83_aboutThisSite.html:13
+msgid "Coming soon"
+msgstr "準備中"
 
 #: app/templates/82_termsOfUse.html:14
 msgid ""
@@ -785,6 +790,10 @@ msgid ""
 "accepted only in Japanese. If necessary, please translate before sending "
 "an email."
 msgstr "本ポリシーに関するお問い合わせは、本サービスのwebページに記載された提供者のメールアドレスまでお願いいたします。また、言語については日本語での問い合わせのみ対応させて頂きます。必要に応じて翻訳など行なってからメールを送信してください。"
+
+#: app/templates/85_faq.html:14
+msgid "The Provider's email address"
+msgstr "提供者のメールアドレス"
 
 #~ msgid ""
 #~ "* The Provider is not liable for"

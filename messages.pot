@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-04-23 14:31+0900\n"
+"POT-Creation-Date: 2024-04-23 14:55+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,6 +43,7 @@ msgid "Privacy Policy"
 msgstr ""
 
 #: app/templates/00_base.html:43 app/templates/85_faq.html:8
+#: app/templates/85_faq.html:13
 msgid "FAQ"
 msgstr ""
 
@@ -131,6 +132,10 @@ msgstr ""
 
 #: app/templates/04_answer.html:29
 msgid "Download"
+msgstr ""
+
+#: app/templates/81_howToUse.html:13 app/templates/83_aboutThisSite.html:13
+msgid "Coming soon"
 msgstr ""
 
 #: app/templates/82_termsOfUse.html:14
@@ -771,5 +776,9 @@ msgid ""
 "address listed on the Service's web page. Please note that inquiries are "
 "accepted only in Japanese. If necessary, please translate before sending "
 "an email."
+msgstr ""
+
+#: app/templates/85_faq.html:14
+msgid "The Provider's email address"
 msgstr ""
 

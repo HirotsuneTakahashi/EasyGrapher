@@ -9,9 +9,9 @@ $(document).ready(function(){
 
     $("#submit-button").click(function(){
         var dotCount = 0;
-        var loadingText = $(this).data('loading-text');
+        var loadingText = $(this).data('data-loading-text');
         var interval = setInterval(function(){
-            $('#fileName').text(loadingText + '.'.repeat(dotCount));
+            $('#fileName').text('loading' + '.'.repeat(dotCount));
                 dotCount = (dotCount + 1) % 4; // 点は最大3つまでとし、それ以上になったらリセット
             }, 750);
     })
